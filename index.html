@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Módulo CGFM - Aplicaciones Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Módulo CGFM - Informática</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>Este módulo forma parte del sistema del CGFM para la gestión de información relacionada con informática.</p>
+    </section>
+
+    <section id="funcionalidades">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Gestión de equipos</li>
+        <li>Soporte técnico</li>
+        <li>Seguimiento de incidentes</li>
+      </ul>
+      <button onclick="mostrarAlerta()">Ver más detalles</button>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Módulo CGFM - Aplicaciones Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
