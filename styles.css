@@ -1,69 +1,121 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 header {
-  background-color: #002147;
+  background: #1e3a8a;
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-main {
-  padding: 20px;
+nav a:hover {
+  color: #93c5fd;
 }
 
 section {
-  margin-bottom: 30px;
   background: white;
-  padding: 20px;
+  margin-bottom: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border: none;
   border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-input[type="submit"],
-button {
-  background-color: #002147;
-  color: white;
-  border: none;
   padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
 footer {
-  background-color: #002147;
-  color: white;
   text-align: center;
-  padding: 10px 0;
-  position: relative;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
