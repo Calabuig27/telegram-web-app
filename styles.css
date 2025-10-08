@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background: #1e3a8a;
+  background: #dfd0c0;
   color: white;
   padding: 30px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -68,7 +68,7 @@ ul li {
 }
 
 button {
-  background-color: #2563eb;
+  background-color: #dfd0c0;
   color: white;
   padding: 12px 18px;
   border: none;
@@ -103,7 +103,7 @@ input[type="email"] {
 
 footer {
   text-align: center;
-  background-color: #1e3a8a;
+  background-color: #dfd0c0;
   color: white;
   padding: 20px 0;
   margin-top: 40px;
