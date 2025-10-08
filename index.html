@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Módulo CGFM - Aplicaciones Web</title>
+  <title>Mòdul CGFM - Aplicacions Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Módulo CGFM - Informática</h1>
-    <nav>
-      <ul>
-        <li><a href="#introduccion">Introducción</a></li>
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Mòdul CGFM - Informàtica</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduccio">Introducció</a></li>
+          <li><a href="#funcionalitats">Funcionalitats</a></li>
+          <li><a href="#contacte">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="introduccion">
-      <h2>Introducción</h2>
-      <p>Este módulo forma parte del sistema del CGFM para la gestión de información relacionada con informática.</p>
+  <main class="container">
+    <section id="introduccio" class="fade-in">
+      <h2>Introducció</h2>
+      <p>El mòdul CGFM és una eina essencial per a la gestió i supervisió de la infraestructura informàtica de l'organització.</p>
     </section>
 
-    <section id="funcionalidades">
-      <h2>Funcionalidades</h2>
+    <section id="funcionalitats" class="fade-in">
+      <h2>Funcionalitats</h2>
       <ul>
-        <li>Gestión de equipos</li>
-        <li>Soporte técnico</li>
-        <li>Seguimiento de incidentes</li>
+        <li>Control d'equips i dispositius</li>
+        <li>Assistència tècnica centralitzada</li>
+        <li>Seguiment i resolució d'incidències</li>
       </ul>
-      <button onclick="mostrarAlerta()">Ver más detalles</button>
+      <button onclick="mostrarAlerta()">Més detalls</button>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form id="formulario-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
+    <section id="contacte" class="fade-in">
+      <h2>Contacte</h2>
+      <form id="form-contacte">
+        <div class="form-group">
+          <label for="nom">Nom complet:</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required />
+        <div class="form-group">
+          <label for="email">Correu electrònic:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-        <input type="submit" value="Enviar" />
+        <button type="submit">Enviar missatge</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Módulo CGFM - Aplicaciones Web</p>
+    <p>&copy; 2025 Mòdul CGFM - Desenvolupament Web</p>
   </footer>
 
   <script src="script.js"></script>
