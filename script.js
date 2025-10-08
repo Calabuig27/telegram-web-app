@@ -1,10 +1,11 @@
 function mostrarAlerta() {
-  alert("Este módulo incluye funcionalidades avanzadas para el seguimiento de la infraestructura informática.");
+  alert("Aquest mòdul ofereix funcionalitats avançades per a la gestió integral de la infraestructura TIC.");
 }
 
-document.getElementById("formulario-contacto").addEventListener("submit", function (e) {
+document.getElementById("form-contacte").addEventListener("submit", function (e) {
   e.preventDefault();
-  const nombre = document.getElementById("nombre").value;
-  const correo = document.getElementById("correo").value;
-  alert(`Gracias, ${nombre}. Te contactaremos pronto a tu correo: ${correo}.`);
+  const nom = document.getElementById("nom").value;
+  const email = document.getElementById("email").value;
+
+  alert(`Gràcies, ${nom}. Ens posarem en contacte amb tu al correu: ${email}.`);
 });
